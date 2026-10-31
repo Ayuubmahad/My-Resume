@@ -1,39 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ayuub Mahad Salal — software engineer focused on full-stack and backend development.">
+  <title>Ayuub Mahad Salal | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Ayuub Mahad Salal</h1>
-    <hr>
-    <h2>About Me</h2>
-    <p>I am a hardworking person i get my work done, i am open minded and also very 
-        ink outside the box</p>
-    <hr>
-    <h2>Education</h2>
-    <p>Bachelor of Computer Science - University of Simad (2023-2028)</p>
-    <hr>
-    <h2>Work Experience </h2>
-    <p>None</p>
-    <hr>
-    <h2>Skills</h2>
-    <p><ul>
-        <li>Microsoft Office: ⭐️⭐️⭐️⭐️</li>
-        <li>Web Devolopment: ⭐️⭐️</li>
-        <li>Data Analytics: ⭐️⭐️⭐️</li>
-    </ul></p>
-    <hr>
-    <h2>Awards and Certifications</h2>
-    <p>None yet</p>
-    <hr>
-    <h2>Other</h2>
-    <p><a href="myhobbies.html">My Hobbies</a></p>
-    <p><a href="contact_me.html">Contact me</a></p>
-    <hr>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Ayuub Mahad</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="contact_me.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Software Engineer · Stockholm</p>
+          <h1>Building reliable software with a full-stack mindset.</h1>
+          <p class="lead">
+            I build practical products and backend systems with TypeScript, Python,
+            PostgreSQL, and AI-assisted workflows. I care about clear interfaces,
+            measurable behavior, and software that stays understandable as it grows.
+          </p>
+          <div class="actions">
+            <a class="button" href="#projects">View selected work</a>
+            <a class="button secondary" href="contact_me.html">Contact me</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <p class="eyebrow">Currently</p>
+          <h2>Computer Science student</h2>
+          <p>BSc Computer Science at SIMAD University, expected 2027.</p>
+          <ul class="clean-list">
+            <li>TypeScript · Python · PostgreSQL</li>
+            <li>Full-stack and backend development</li>
+            <li>AI, search, payments, and reliability</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Systems built around real engineering constraints.</h2>
+          <p>
+            A few projects that show how I think about correctness, failure modes,
+            performance, and user-facing product value.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <a class="project-card" href="https://github.com/Ayuubmahad/kassa" target="_blank" rel="noreferrer">
+            <h3>Kassa</h3>
+            <p>
+              A transaction-safe payments core using double-entry accounting,
+              idempotent checkout flows, and concurrency-aware database behavior.
+            </p>
+            <span class="project-link">View on GitHub →</span>
+          </a>
+
+          <a class="project-card" href="https://github.com/Ayuubmahad/vakt" target="_blank" rel="noreferrer">
+            <h3>Vakt</h3>
+            <p>
+              A real-time anomaly-detection engine combining machine learning,
+              rules, safe fallback behavior, and observable decisions.
+            </p>
+            <span class="project-link">View on GitHub →</span>
+          </a>
+
+          <a class="project-card" href="https://github.com/Ayuubmahad/kompass" target="_blank" rel="noreferrer">
+            <h3>Kompass</h3>
+            <p>
+              A hybrid search and recommendation engine that fuses full-text and
+              semantic retrieval with measurable relevance.
+            </p>
+            <span class="project-link">View on GitHub →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Toolkit</p>
+          <h2>Technologies I use to turn ideas into working systems.</h2>
+        </div>
+        <div class="skills" aria-label="Skills">
+          <span class="skill">TypeScript</span>
+          <span class="skill">Python</span>
+          <span class="skill">PostgreSQL</span>
+          <span class="skill">Next.js</span>
+          <span class="skill">Node.js</span>
+          <span class="skill">REST APIs</span>
+          <span class="skill">AI and ML integration</span>
+          <span class="skill">Docker</span>
+          <span class="skill">GitHub Actions</span>
+          <span class="skill">Responsive web development</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Education</p>
+          <h2>SIMAD University</h2>
+          <p>BSc Computer Science · expected 2027</p>
+        </div>
+        <div>
+          <p class="eyebrow">What I’m looking for</p>
+          <h2>Software engineering opportunities</h2>
+          <p>
+            I’m interested in Stockholm-based roles and internships where I can
+            contribute to full-stack, backend, AI, search, or product engineering work.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Ayuub Mahad Salal · Built with HTML and CSS.</p>
+    </div>
+  </footer>
 </body>
-
-<footer>&copy; Ayuub Mahad  All rights reserved.</footer>
 </html>
